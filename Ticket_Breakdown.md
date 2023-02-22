@@ -33,6 +33,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 **Time/effort estimates:** 30 minutes
 
+---
+
 ### Update the code to accept `customAgentId` when saving the data
 
 **Implementation details:**
@@ -42,6 +44,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 **Acceptance criteria:** Data entry code updated + Old database is updated if our existing Facilities require it. 
 
 **Time/effort estimates:** 2 hours
+
+---
 
 ### Update `getShiftsByFacility` to include the `customAgentId` in the returned metadata
 
@@ -55,6 +59,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 **Acceptance criteria:** Correct database query written with tests & `customAgentId` returned for Agents in the metadata if they assigned. 
 
 **Time/effort estimates:** 2 hours
+
+---
 
 ### Update `generateReport` to include the `customAgentId`
 
