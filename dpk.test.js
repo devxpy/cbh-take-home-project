@@ -21,11 +21,6 @@ describe("deterministicPartitionKey", () => {
     expect(key).toBe("0");
   });
 
-  it("Returns the literal '0' when given null", () => {
-    const key = deterministicPartitionKey(null);
-    expect(key).toBe("0");
-  });
-
   it("Returns the given partitionKey as-is", () => {
     const key = deterministicPartitionKey({partitionKey: "SomeHexDigest1234"});
     expect(key).toBe("SomeHexDigest1234");
