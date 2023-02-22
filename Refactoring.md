@@ -15,3 +15,32 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 - Moved the `const`s outside the function body. This makes it easier to change them in the future and reuse them across different functions.
 - Refactored the object accessor `event.partitionKey` into a variable so that changing the key `"partitionKey"` is easier in the future.
 - Added comments as necessary
+
+
+### Tests:
+
+```
+$ npm test
+
+> cbh-take-home-project@1.0.0 test
+> jest
+
+ PASS  ./dpk.test.js
+  deterministicPartitionKey
+    ✓ Returns the literal '0' when given no input (3 ms)
+    ✓ Returns the literal '0' when given undefined
+    ✓ Returns the literal '0' when given empty str
+    ✓ Returns the literal '0' when given null
+    ✓ Returns the given partitionKey as-is (1 ms)
+    ✓ Returns the given partitionKey as a JSON-stringified object (1 ms)
+    ✓ If the given partitionKey is too long, re-hashes it (1 ms)
+    ✓ If the given partitionKey is null, returns the hex digest of the string `null` (6 ms)
+    ✓ Returns the computed partition key as a hex digest from a string (2 ms)
+    ✓ Returns the computed partition key as a hex digest from an object (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        0.471 s, estimated 1 s
+Ran all test suites.
+```
