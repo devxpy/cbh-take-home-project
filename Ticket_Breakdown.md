@@ -65,7 +65,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ### Update `generateReport` to include the `customAgentId`
 
 **Implementation details:**
-1. In the PDF writer, check if the `customAgentId` is present for a given agent, and displays it in the generated report, under each Agent.
+1. In the PDF writer, check if the `customAgentId` is present for a given agent, and display it in the generated report, under each Agent.
 2. Avoid Leaking the internal database ID of the Agent.
 
 **Acceptance criteria:** The correct `customAgentId` shows up for agents if they are assigned.
